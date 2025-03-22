@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h1 {
+    color: #333;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#lista-palabras {
+    width: 200px;
+    text-align: left;
+    font-size: 18px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#juego-container {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    grid-auto-rows: 40px; 
+    grid-gap: 5px;
+}
+
+.celda {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.celda.seleccionada {
+    background-color: yellow;
+}
+
+.celda.correcta {
+    background-color: lightgreen;
+}
+
+.celda:hover {
+    background-color: #ddd;
+}
+
+.encontrar {
+    text-decoration: line-through;
+    color: gray;
+}
